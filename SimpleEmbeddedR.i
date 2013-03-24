@@ -14,5 +14,6 @@
 #include "SimpleEmbeddedR.h"
 %}
 
-%include "SimpleEmbeddedR.h"
+%typemap(newfree) char const* "free($1);";
 %newobject runRCode;
+%include "SimpleEmbeddedR.h"
