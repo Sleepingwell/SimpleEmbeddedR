@@ -31,5 +31,3 @@ char const* runRCode(char const* code) {
     UNPROTECT(2);
     return cRes;
 }
-
-

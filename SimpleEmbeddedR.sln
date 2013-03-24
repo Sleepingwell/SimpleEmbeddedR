@@ -5,14 +5,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleEmbeddedR", "SimpleEm
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		DebugJava|Win32 = DebugJava|Win32
+		ReleaseJava|Win32 = ReleaseJava|Win32
+		ReleasePython|Win32 = ReleasePython|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.Debug|Win32.Build.0 = Debug|Win32
-		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.Release|Win32.ActiveCfg = Release|Win32
-		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.Release|Win32.Build.0 = Release|Win32
+		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.DebugJava|Win32.ActiveCfg = DebugJava|Win32
+		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.DebugJava|Win32.Build.0 = DebugJava|Win32
+		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.ReleaseJava|Win32.ActiveCfg = ReleaseJava|Win32
+		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.ReleaseJava|Win32.Build.0 = ReleaseJava|Win32
+		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.ReleasePython|Win32.ActiveCfg = ReleasePython|Win32
+		{2F61199A-1ADD-40E8-B198-225D1DFA4496}.ReleasePython|Win32.Build.0 = ReleasePython|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,4 +3,6 @@ Release/
 *.user
 *.ncb
 *.suo
+*.py*
+embed*.cpp
 

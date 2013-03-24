@@ -1,4 +1,6 @@
-This is a very simple example of how to embed R in another language. It might be useful for calling R on a server, when you only need to get text back.
+This is a very simple example of how to embed R in another language. It might be useful for calling R on a when you only need to get text back.
+
+However, R is not reentrant, so this will be racy if running on a server.
 
 
 ## Introduction
@@ -23,15 +25,17 @@ The interface is generated using SWIG (www.swig.org).
 
 To generate bindings for Java, you would say this:
 
-    swig -c++ -java -package "embedr" -o embed_java.cpp -outdir "embedr" SimpleEmbededR.i
+    swig -c++ -java -package "embedr" -o embed_java.cpp -outdir "embedr" SimpleEmbeddedR.i
 
 For Python you would say:
 
-    swig -c++ -python -o embed_python.cpp SimpleEmbededR.i
+    swig -c++ -python -o embed_python.cpp SimpleEmbeddedR.i
+
+Note that to run it, you need to make sure that R.<dll/so> is on the path.
 
 For other languages (and SWIG supports a lot of them), please see the SWIG doco.
 
-You then need to setup your build environment. For windows plebs (like me) you can see how I've setup the environment (for Java) in the visual studio files herein.
+You then need to setup your build environment. For windows plebs (like me) you can see how I've setup the environment (for Java and Python) in the visual studio files herein.
 
 with gcc, a line like:
 
